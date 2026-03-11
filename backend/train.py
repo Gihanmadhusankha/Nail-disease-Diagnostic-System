@@ -14,12 +14,26 @@ def train_yolo_model():
         data='F:/projects/final_project_YOLO V-11/dataset/dataset.yaml',  # Path to dataset YAML
         epochs=50,                 # Number of training epochs
         batch=4,                  # Batch size
-        imgsz=416,                 # Image size
+        imgsz=416, 
+        lr0=0.001,                # Image size
         project='model/trained_weights',  # Folder to save weights
         name='nail_disease_model',  # Name of the experiment
         device=device,             # Ensure training runs on GPU if available
         amp=True
     )
+#     model.train(
+#     data=dataset_yaml,
+#     epochs=50,
+#     batch=4,         
+#     imgsz=640,         
+#     lr0=0.001,
+#     optimizer='AdamW',
+#     augment=True,      
+#     degrees=15.0,
+#     weight_decay=0.0005,
+#       project='model/trained_weights', 
+#      name='nail_disease_model', 
+# )
 
 if __name__ == '__main__':
     train_yolo_model()

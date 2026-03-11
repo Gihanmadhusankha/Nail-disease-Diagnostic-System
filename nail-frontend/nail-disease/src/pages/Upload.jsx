@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { API_ENDPOINTS } from '../config/api';
 import jsPDF from 'jspdf';
 import { ClipLoader } from 'react-spinners';
 import { motion, AnimatePresence } from 'framer-motion';
+import { predictImage } from '../services/apiService';
 
 
 function Upload() {
@@ -13,11 +14,43 @@ function Upload() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
+  const [cameraOn, setCameraOn] = useState(false);
+  const [inputMode, setInputMode] = useState('file');
+
+  const videoRef = useRef(null);
+  const canvasRef = useRef(null);
+  const streamRef = useRef(null);
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    return () => {
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => track.stop());
+        streamRef.current = null;
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (cameraOn && videoRef.current && streamRef.current) {
+      videoRef.current.srcObject = streamRef.current;
+      videoRef.current.play().catch(() => {
+      });
+    }
+  }, [cameraOn]);
+
+  useEffect(() => {
+    return () => {
+      if (preview && preview.startsWith('blob:')) {
+        URL.revokeObjectURL(preview);
+      }
+    };
+  }, [preview]);
+
   const handleFileChange = (e) => {
     const selected = e.target.files[0];
+    if (cameraOn) stopCamera();
     setFile(selected);
     setError('');
     setResult(null);
@@ -36,6 +69,80 @@ function Upload() {
     }
   };
 
+  const switchInputMode = (mode) => {
+    setInputMode(mode);
+    setError('');
+    setResult(null);
+    if (mode === 'file' && cameraOn) {
+      stopCamera();
+    }
+  };
+
+  const startCamera = async () => {
+    try {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        setError('Webcam is not supported in this browser.');
+        return;
+      }
+
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      streamRef.current = stream;
+
+      setCameraOn(true);
+      setError('');
+      setResult(null);
+    } catch (err) {
+      setError('Unable to access webcam. Please allow camera permission.');
+    }
+  };
+
+  const stopCamera = () => {
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop());
+      streamRef.current = null;
+    }
+    if (videoRef.current) {
+      videoRef.current.srcObject = null;
+    }
+    setCameraOn(false);
+  };
+
+  const captureFromCamera = () => {
+    if (!videoRef.current || !canvasRef.current) {
+      setError('Camera is not ready yet.');
+      return;
+    }
+
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+
+    if (!video.videoWidth || !video.videoHeight) {
+      setError('Camera is warming up. Please try capture again.');
+      return;
+    }
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    canvas.toBlob((blob) => {
+      if (!blob) {
+        setError('Failed to capture image from webcam.');
+        return;
+      }
+
+      const capturedFile = new File([blob], `webcam_${Date.now()}.jpg`, { type: 'image/jpeg' });
+      const objectUrl = URL.createObjectURL(blob);
+
+      setFile(capturedFile);
+      setPreview(objectUrl);
+      setError('');
+      setResult(null);
+      stopCamera();
+    }, 'image/jpeg', 0.95);
+  };
+
   const handleSubmit = async () => {
     if (!file) {
       setError('Please select a file.');
@@ -47,8 +154,8 @@ function Upload() {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/predict', formData);
-      setResult(res.data);
+      const data = await predictImage(formData);
+      setResult(data);
     } catch (err) {
       setError(err.response?.data?.error || 'Server Error');
     } finally {
@@ -58,8 +165,26 @@ function Upload() {
 
   const handleMoreInfo = (label) => {
     navigate(`/details/${encodeURIComponent(label)}`, {
-      state: { resultImage: result.filename }
+      state: { 
+        resultImage: result.result_image,
+        originalImage: result.filename,
+        confidence: result.predictions.find(p => p.label === label)?.confidence
+      }
     });
+  };
+
+  const getExplanationText = (label) => {
+    const explanations = {
+      'Acral Lentiginous Melanoma': 'A serious form of skin cancer under or around the nail. Early medical diagnosis is important.',
+      'Beaus Line': 'Horizontal lines on the nail that can appear after illness, stress, or nutritional deficiency.',
+      'Blue Finger': 'Bluish nail color usually linked to circulation or oxygen-related issues that need evaluation.',
+      'Clubbing': 'Rounded fingertip and curved nail changes that may be associated with heart or lung conditions.',
+      'Healthy Nail': 'The nail appears normal with no significant disease pattern detected by the model.',
+      'Onychogryphosis': 'Thickened, overgrown nail often requiring podiatric or dermatology care for proper management.',
+      'Pitting': 'Small dents in the nail surface, commonly associated with psoriasis or other inflammatory conditions.',
+    };
+
+    return explanations[label] || 'No detailed explanation available for this condition.';
   };
 
   const handleDownloadReport = async () => {
@@ -90,8 +215,8 @@ function Upload() {
       doc.text(`Patient Name: __________________________`, 30, 62);
       doc.text(`Doctor Name:  __________________________`, 30, 70);
   
-      // Fetch image
-      const imageUrl = `http://localhost:5000/static/uploads/${result.filename.replace(/\\/g, '/')}`;
+      // Fetch analyzed result image (with detection boxes)
+      const imageUrl = `${API_ENDPOINTS.STATIC_RESULTS}/${result.result_image}`;
       try {
         const response = await fetch(imageUrl);
         const blob = await response.blob();
@@ -124,10 +249,14 @@ function Upload() {
             y += 6;
   
             doc.setTextColor(0);
-            doc.text(`• Treatment:`, 35, y);
+            doc.text(`• Explanation:`, 35, y);
+            y += 6;
+
             doc.setTextColor(34, 139, 34);
-            doc.text(p.treatment || 'No advice available', 75, y);
-            y += 12;
+            const explanation = getExplanationText(p.label);
+            const wrappedExplanation = doc.splitTextToSize(explanation, 130);
+            doc.text(wrappedExplanation, 40, y);
+            y += wrappedExplanation.length * 6 + 6;
   
             if (y > 260) {
               doc.addPage();
@@ -173,6 +302,7 @@ function Upload() {
     setFile(null);
     setPreview(null);
     setError('');
+    stopCamera();
   };
 
   return (
@@ -199,21 +329,94 @@ function Upload() {
                 Upload a nail image to detect potential diseases using AI.
               </p>
 
-              <div className="border-2 border-dashed border-purple-400 rounded-lg p-6 text-center mb-4">
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                  className="hidden"
-                  id="file-upload"
-                />
-                <label
-                  htmlFor="file-upload"
-                  className="cursor-pointer text-pink-500 font-medium hover:underline"
+              <div className="flex gap-2 mb-4">
+                <button
+                  type="button"
+                  onClick={() => switchInputMode('file')}
+                  className={`flex-1 py-2 rounded-lg font-semibold ${
+                    inputMode === 'file'
+                      ? 'bg-pink-600 text-white'
+                      : 'bg-gray-700 text-gray-200 hover:bg-gray-600'
+                  }`}
                 >
-                  Drag & drop or <span className="bg-pink-600 px-2 py-1 rounded text-white ml-2">Browse</span>
-                </label>
+                  Use File
+                </button>
+                <button
+                  type="button"
+                  onClick={() => switchInputMode('webcam')}
+                  className={`flex-1 py-2 rounded-lg font-semibold ${
+                    inputMode === 'webcam'
+                      ? 'bg-pink-600 text-white'
+                      : 'bg-gray-700 text-gray-200 hover:bg-gray-600'
+                  }`}
+                >
+                  Use Webcam
+                </button>
               </div>
+
+              {inputMode === 'file' && (
+                <div className="border-2 border-dashed border-purple-400 rounded-lg p-6 text-center mb-4">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileChange}
+                    className="hidden"
+                    id="file-upload"
+                  />
+                  <label
+                    htmlFor="file-upload"
+                    className="cursor-pointer text-pink-500 font-medium hover:underline"
+                  >
+                    Drag & drop or <span className="bg-pink-600 px-2 py-1 rounded text-white ml-2">Browse</span>
+                  </label>
+                </div>
+              )}
+
+              {inputMode === 'webcam' && (
+                <>
+                  <div className="flex gap-2 mb-4">
+                    {!cameraOn ? (
+                      <button
+                        onClick={startCamera}
+                        type="button"
+                        className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg"
+                      >
+                        Start Webcam
+                      </button>
+                    ) : (
+                      <button
+                        onClick={stopCamera}
+                        type="button"
+                        className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 rounded-lg"
+                      >
+                        Stop Webcam
+                      </button>
+                    )}
+
+                    <button
+                      onClick={captureFromCamera}
+                      type="button"
+                      disabled={!cameraOn}
+                      className="flex-1 bg-teal-600 hover:bg-teal-700 disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-semibold py-2 rounded-lg"
+                    >
+                      Capture Photo
+                    </button>
+                  </div>
+
+                  {cameraOn && (
+                    <div className="mb-4">
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        playsInline
+                        muted
+                        className="w-full rounded-lg border border-gray-600 shadow-md"
+                      />
+                      <canvas ref={canvasRef} className="hidden" />
+                    </div>
+                  )}
+                </>
+              )}
 
               {preview && (
                 <img
@@ -252,7 +455,7 @@ function Upload() {
                     <h2 className="text-lg font-semibold text-purple-400 mb-2">Predicted Results</h2>
                     <div className="relative inline-block w-[300px]">
                       <img
-                        src={`http://localhost:5000/static/results/${result.result_image}`}
+                        src={`${API_ENDPOINTS.STATIC_RESULTS}/${result.result_image}`}
                         alt="Result with Predictions"
                         className="w-full h-auto rounded-md border border-purple-600 shadow-lg object-contain"
                       />
@@ -271,9 +474,7 @@ function Upload() {
                     <div key={i} className="mb-3 p-3 border border-gray-700 rounded-md bg-gray-800">
                       <p><strong>Label:</strong> {p.label}</p>
                       <p><strong>Confidence:</strong> {p.confidence}%</p>
-                      {p.treatment && (
-                        <p className="mt-1 text-green-400"><strong>Treatment:</strong> {p.treatment}</p>
-                      )}
+                      
                       <button
                         onClick={() => handleMoreInfo(p.label)}
                         className="mt-2 text-sm text-blue-400 underline hover:text-blue-300"

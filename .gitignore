@@ -1,0 +1,53 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+ENV/
+
+# Node / frontend
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Project-specific generated files
+runs/
+uploads/
+backend/instance/
+backend/json_results/
+backend/runs/
+backend/model/trained_weights/
+backend/app/static/uploads/
+backend/app/static/results/
+backend/static/uploads/
+backend/static/results/
+
+# Large model artifacts
+*.pt

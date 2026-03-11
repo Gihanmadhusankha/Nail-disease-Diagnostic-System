@@ -1234,3 +1234,490 @@
 2025-05-09 10:20:27,519 INFO: 127.0.0.1 - - [09/May/2025 10:20:27] "POST /predict HTTP/1.1" 200 -
 2025-05-09 10:20:28,135 INFO: 127.0.0.1 - - [09/May/2025 10:20:28] "GET /static/results/04765af8a40ab942.jpg HTTP/1.1" 200 -
 2025-05-09 10:22:23,024 INFO: 127.0.0.1 - - [09/May/2025 10:22:23] "GET /static/uploads/1_JPG.rf.7169b67485216d097c9b5b57bbe44e4d.jpg HTTP/1.1" 200 -
+2025-07-11 19:10:03,233 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2025-07-11 19:10:03,279 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 19:10:03,279 INFO: [33mPress CTRL+C to quit[0m
+2025-07-11 19:10:03,281 INFO:  * Restarting with stat
+2025-07-11 19:10:08,359 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2025-07-11 19:10:08,404 WARNING:  * Debugger is active!
+2025-07-11 19:10:08,409 INFO:  * Debugger PIN: 594-612-580
+2025-07-11 19:10:52,814 INFO: 127.0.0.1 - - [11/Jul/2025 19:10:52] "POST /predict HTTP/1.1" 200 -
+2025-07-11 19:10:53,830 INFO: 127.0.0.1 - - [11/Jul/2025 19:10:53] "GET /static/results/d22fd8966ffa57ab.jpg HTTP/1.1" 200 -
+2025-07-11 19:11:11,526 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:11] "POST /predict HTTP/1.1" 200 -
+2025-07-11 19:11:11,574 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:11] "GET /static/results/3148d1d47d524e01.jpg HTTP/1.1" 200 -
+2025-07-11 19:11:21,474 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:21] "GET /static/uploads/eccfcd66bf63bb7ca1655c5ac5bcc66d-front-door-design-skin-cancer_jpg.rf.9d8bcb833b7885dbc9ec4e614a716bf0.jpg HTTP/1.1" 200 -
+2025-07-11 19:11:48,990 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:48] "POST /predict HTTP/1.1" 200 -
+2025-07-11 19:11:49,036 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:49] "GET /static/results/abe345be682012ad.jpg HTTP/1.1" 200 -
+2025-07-11 19:11:54,692 INFO: 127.0.0.1 - - [11/Jul/2025 19:11:54] "GET /static/uploads/17_PNG_jpg.rf.dd9ff853ebd567f07058d22c5212602e.jpg HTTP/1.1" 200 -
+2025-07-11 19:12:28,864 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:28] "OPTIONS /history HTTP/1.1" 200 -
+2025-07-11 19:12:28,870 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:28] "OPTIONS /history HTTP/1.1" 200 -
+2025-07-11 19:12:29,294 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "GET /history HTTP/1.1" 200 -
+2025-07-11 19:12:29,318 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "GET /history HTTP/1.1" 200 -
+2025-07-11 19:12:29,678 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "[36mGET /static/uploads/17_PNG_jpg.rf.dd9ff853ebd567f07058d22c5212602e.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:29,681 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "[36mGET /static/uploads/eccfcd66bf63bb7ca1655c5ac5bcc66d-front-door-design-skin-cancer_jpg.rf.9d8bcb833b7885dbc9ec4e614a716bf0.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:29,685 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "GET /static/uploads/Screen-Shot-2021-10-26-at-11-06-37-AM_png.rf.55e3cbb435d279fb7fa01e7be3adb130.jpg HTTP/1.1" 200 -
+2025-07-11 19:12:29,708 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "[36mGET /static/uploads/1_JPG.rf.7169b67485216d097c9b5b57bbe44e4d.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:29,718 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "[36mGET /static/uploads/h6_png_jpg.rf.11ecd4f6857372c33fb4eab04e325eda.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:29,739 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:29] "[36mGET /static/uploads/Screenshot-2021-11-19-004140_png_jpg.rf.9544049d4001651e6d2b8b489e5c003d.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,029 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screenshot-2021-11-19-030651_png_jpg.rf.5d6183f68b467a017dd865d0ee6b937d.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,036 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/FzX1JYr4y78Em_jpeg_jpg.rf.115b2d3235a2c583cb09cc274a66705c.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,052 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-16-at-6-57-51-PM_png.rf.c603e7ba5bbc01012ded617f3ba1cf2b.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,063 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/208_JPG.rf.db0b012d6a8714db3d2745b5d95d9d70.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,065 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/h115_png.rf.d0cca64031a99b25eb34b3146f1089e0.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,082 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screenshot-2021-11-19-025151_png_jpg.rf.ff0f3821cad9f719a9b328afeeadc3af.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,367 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/h115_png_jpg.rf.b8b68955d4fe63223a4955ac0b3808eb.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,393 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-22-at-1-25-10-PM_png_jpg.rf.49cfd49bb0075e85c275ca864d7ebe13.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,395 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/clubbing-4_jpg.rf.752d98559a4755b853ab954836ac9472.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,411 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-16-at-6-57-14-PM_png_jpg.rf.b973d3eab90080cffc7038fad376f675.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,429 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-10-26-at-11-17-51-AM_png.rf.0ecb73eaeb0d39e1fd5dc5fc65d4127c.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,443 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/beaus-lines-16_jpg.rf.671329de425167f8be7143a4a79a925d.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,716 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-10-26-at-11-18-49-AM_png_jpg.rf.89d05318a75f7d365df048d201e3c25e.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,731 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-22-at-9-58-15-AM_png_jpg.rf.519eeb3395fff8c3640232701bd45f1c.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,745 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-22-at-8-08-01-AM_png_jpg.rf.d842ed86e0c53849eef79d8dfa65709a.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,757 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-22-at-9-23-31-AM_png_jpg.rf.f63cd266fbcd3f0f23d490bfdc347383.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,770 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-11-22-at-4-53-53-PM_png_jpg.rf.699ccd0c4052ae65f9398075062d320f.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:30,783 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:30] "[36mGET /static/uploads/Screen-Shot-2021-10-15-at-10-39-17-AM_png_jpg.rf.8b1377d2eeea82ee4547cc31ab1302e1.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,079 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/47_JPG.rf.859f79f1b23e6d5f8717b4b403174119.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,080 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/images.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,094 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/Screen-Shot-2021-11-15-at-12-19-41-PM_png.rf.c8921d0d3e2a6152dd0a27adddf6823b.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,107 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/h159_png.rf.2c602896a3622275f01280daa9a72b07.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,120 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/k143_png.rf.4725e220599ef720db23a434cdfefd29.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,140 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/h6_png.rf.738bb0117137ea520937ab9dd24b45cf.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,443 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/61_JPG.rf.2e198a02a4475926b64eb6fa65f5320b.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,446 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/83_JPG.rf.ec6ec5dfc93e7c18b6d2e342995953f6.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,460 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/finger-clubbing_jpg.rf.b5e8b1f66553e57daeae7656ad76bbc9.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,465 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/107_JPG.rf.1c814c07a2fccda4c12835b570fd8118.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,491 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/31_JPG.rf.24e70cf5daf5d73f4be158e16d8809b4.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,491 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/256_jpg.rf.6b86e81652dc98a34088dd7d26b74386.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,814 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/97_JPG.rf.57164ea44c3a6f70bd1ff8ebea8a488f.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,818 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/h127_png.rf.167d62fed2c891a588a9ed71d732bea4.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,831 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/nails-chemotherapy-3_jpg.rf.1d111d115ddc49ba32f8dfae8488fb01.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,840 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/eccfcd66bf63bb7ca1655c5ac5bcc66d--front-door-design-skin-cancer_jpg.rf.0d2093a5571faf96a53b4e4e5e9b1095.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,857 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/h4_png_jpg.rf.d02cbd803e04ef410049532776343e45.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:31,864 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:31] "[36mGET /static/uploads/images-JRLiQC_jpeg_jpg.rf.e14b45d808c09ab9df9726c9268fd1d7.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:32,162 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[36mGET /static/uploads/FzX1JYr4y78Em_jpeg_jpg.rf.fbae822e2420836e643aa8e128400954.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:32,164 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[36mGET /static/uploads/9_PNG.rf.995215ae573af0b85d3ab1006148c60f.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:32,179 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[36mGET /static/uploads/9_PNG_jpg.rf.13c1a3e92bbb4dd60816c532f59a64c3.jpg HTTP/1.1[0m" 304 -
+2025-07-11 19:12:32,193 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/hutchinsons-sign_jpg.rf.7e9b1caf85c636070e92dcbf514c2765.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,197 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/k115_png.rf.dc8954c7077e57e28de2d5d4aa65fe6d.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,212 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screenshot-2021-11-19-021151_png.rf.84ff93ab0e671c89aa61306a0ed5d7b4.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,496 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-9-23-31-AM_png.rf.f940369110b964370547887e0424cad2.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,500 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screen-Shot-2021-11-19-at-1-51-06-AM_png.rf.fa630f8c4e36736353d94258fefdaf10.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,509 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-1-25-10-PM_png.rf.d05155ee241aaffbdce19e624c030707.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,518 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screenshot-2021-11-19-010306_png.rf.497d594ac9326005539d98f5e1390fac.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,530 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screenshot-2021-11-19-010617_png.rf.865a09bcd44adb21537c96a6d3e6457e.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,534 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/k87_png.rf.23457dc0eb2ab429f1f11137ffe53472.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,824 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/FzX1JYr4y78Em_jpeg.rf.58bba047ae1978e8ab0dee61e7aa99ab.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,831 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/141_JPG.rf.6612cc00e38b44e37e1f8cc4aa3be368.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,837 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screen-Shot-2021-11-17-at-2-28-39-PM_png.rf.b047bb6264cfa3dde7dd53e9dca1b75d.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,850 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/Screen-Shot-2021-11-16-at-10-43-37-PM_png.rf.bc3fc691ea5e5fe9be0cc3793e734510.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,859 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/k84_png.rf.230e65a1726766ed8083c23b3fb3e9af.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:32,865 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:32] "[33mGET /static/uploads/h240_png.rf.92b6fec522d1a6a5874d76bb5c7069b7.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,149 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/40_JPG.rf.ba9cc4edae755fe4947b5f160f72a96e.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,156 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screenshot-2021-11-22-014312_png_jpg.rf.a591a9510686de6670cc5d0282dbe8a7.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,175 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screenshot-2021-11-19-011229_png_jpg.rf.0403b028502cb11d2fbbe71573876917.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,184 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screenshot-2021-11-19-020122_png_jpg.rf.bd034f0edc3313b6dd3398595fbc2864.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,192 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screenshot-2021-11-21-163956_png_jpg.rf.a461809f47c9ff647d40a5098a6845e2.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,197 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-11-16-at-6-58-36-PM_png_jpg.rf.b4a6414c610678cc8da29236b4667b8b.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,475 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screenshot-2021-11-19-023057_png.rf.153dd43925d4c76cdac621f8c27ea25c.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,484 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-10-15-at-10-36-19-AM_png.rf.0b57245774299419df103ea2ec70d534.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,489 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/h233_png.rf.dda0fc4710d357bf5d36334f5d893058.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,497 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/k92_png.rf.c0a9b82dc76a6c56a1d4bf7f09706ecb.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,508 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-21-26-PM_png.rf.b523d362ea68389dc437fba73ba5a37d.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,518 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-10-15-at-12-02-21-PM_png.rf.2ab5f5834855fadab38cfc503828b497.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,796 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-40-52-PM_png.rf.03b3e5c3e7ecda4ba3b9f91b7972bca9.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,801 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-11-19-at-1-32-36-AM_png.rf.ce6a47146f88df9f9c20b5a53394a0e3.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,817 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/k37_png.rf.be962d9261bf44c2c6195d3c29755c5f.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,823 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/303_JPG.rf.c441dca7d0ffc326377b8fd02ff4ccbd.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,841 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/h237_png.rf.134c38f2db2c8c1fd802459df16b06c6.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:33,852 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:33] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-19-42-PM_png.rf.6258b31a19291c7beb4551971db85891.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,115 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/Screenshot-2021-11-19-025151_png.rf.11517308c409a715bc7574825080b2be.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,126 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/77_JPG.rf.0e6c04af35ab628ebf814997834c1c20.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,136 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-40-47-PM_png.rf.e02e3a1d7a0b953461e5afb3baa86eef.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,148 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/k127_png.rf.f529a7b09c94a9d480aeccb3ef5cbb5d.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,152 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/Screen-Shot-2021-11-15-at-11-56-32-AM_png.rf.71c8da9177ac9571ae52746c06e433ae.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,167 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/Screenshot-2021-11-19-005248_png.rf.9da172d1108dd683a5306aee6c3d0492.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,629 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/r0_34_640_394_w1200_h678_fmax-copy_jpg.rf.2f6886e9a13f6a1229d98d6caf5e20bf.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,731 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-5-25-53-PM_png.rf.36180c47299d592e98de39e462487696.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:34,911 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:34] "[33mGET /static/uploads/k126_png.rf.0a4bf61a2288b7c1c875db00cf282ade.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,093 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/179_JPG.rf.6690c70939101eb42ff1a2b94a7cd218.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,234 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/12_JPG.rf.21b44580834b4fd33c912820c46ac8bd.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,349 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/205_JPG.rf.323e0b40911de026ad62bdb6abc87045.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,501 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/5_JPG.rf.ebcb409f2d133b812795012f3e73cc57.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,585 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/Screenshot-2021-11-19-004211_png_jpg.rf.87bcb49dd91947b1fb31d4e5df17d713.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,691 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/h136_png_jpg.rf.032d122ef37347fa3e0472a3bbd22de0.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,819 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/beau_jpg.rf.ff56bee11b354946b2d87105df62bcb8.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:35,914 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:35] "[33mGET /static/uploads/260_JPG.rf.0a4fdc3ca67063b05eae91cc73817f50.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:36,014 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:36] "[33mGET /static/uploads/2_JPG.rf.a35c884e3dc728c250aeb20d2aad1b5b.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:36,145 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:36] "[33mGET /static/uploads/8_JPG.rf.7dd616ed71714e586bdeb65fe643fcf0.jpg HTTP/1.1[0m" 404 -
+2025-07-11 19:12:36,276 INFO: 127.0.0.1 - - [11/Jul/2025 19:12:36] "[33mGET /static/uploads/15_JPG.rf.bc473abbfc223240d11a99694decf54b.jpg HTTP/1.1[0m" 404 -
+2026-02-24 15:43:40,044 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:43:40,812 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-24 15:43:40,812 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 15:43:40,846 INFO:  * Restarting with stat
+2026-02-24 15:43:46,346 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:43:46,394 WARNING:  * Debugger is active!
+2026-02-24 15:43:46,401 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 15:49:21,785 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:49:21,851 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-24 15:49:21,851 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 15:49:21,854 INFO:  * Restarting with stat
+2026-02-24 15:49:28,258 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:49:28,304 WARNING:  * Debugger is active!
+2026-02-24 15:49:28,312 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 15:58:54,112 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:58:54,314 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-24 15:58:54,314 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 15:58:54,339 INFO:  * Restarting with stat
+2026-02-24 15:59:02,859 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 15:59:02,904 WARNING:  * Debugger is active!
+2026-02-24 15:59:02,912 INFO:  * Debugger PIN: 483-221-190
+2026-02-24 15:59:28,126 INFO: 127.0.0.1 - - [24/Feb/2026 15:59:28] "GET /history HTTP/1.1" 200 -
+2026-02-24 16:03:09,994 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:03:10,054 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-24 16:03:10,054 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 16:03:10,056 INFO:  * Restarting with stat
+2026-02-24 16:03:17,109 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:03:17,153 WARNING:  * Debugger is active!
+2026-02-24 16:03:17,163 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 16:06:28,669 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 16:06:29,955 INFO:  * Restarting with stat
+2026-02-24 16:06:44,256 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:06:44,335 WARNING:  * Debugger is active!
+2026-02-24 16:06:44,347 INFO:  * Debugger PIN: 483-221-190
+2026-02-24 16:06:50,010 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:06:51,059 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 16:06:51,059 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 16:06:51,061 INFO:  * Restarting with stat
+2026-02-24 16:07:01,657 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:07:01,726 WARNING:  * Debugger is active!
+2026-02-24 16:07:01,739 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 16:13:10,976 INFO: 127.0.0.1 - - [24/Feb/2026 16:13:10] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:13:11,077 INFO: 127.0.0.1 - - [24/Feb/2026 16:13:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-24 16:13:31,933 INFO: 127.0.0.1 - - [24/Feb/2026 16:13:31] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:13:31,997 INFO: 127.0.0.1 - - [24/Feb/2026 16:13:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-24 16:17:29,490 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 16:17:30,061 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 16:17:31,701 INFO:  * Restarting with stat
+2026-02-24 16:17:32,035 INFO:  * Restarting with stat
+2026-02-24 16:17:43,544 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:17:43,579 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:17:43,590 INFO: Backend starting on http://0.0.0.0:5000 (debug=True, reloader=False)
+2026-02-24 16:17:43,607 WARNING:  * Debugger is active!
+2026-02-24 16:17:43,624 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 16:17:43,633 INFO: Backend starting on http://0.0.0.0:5000 (debug=True, reloader=False)
+2026-02-24 16:17:43,647 WARNING:  * Debugger is active!
+2026-02-24 16:17:43,658 INFO:  * Debugger PIN: 483-221-190
+2026-02-24 16:21:30,637 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:30] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:32,942 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:32] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:34,132 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:34] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:35,210 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:35] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:36,499 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:36,809 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:36,858 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:37,072 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:37,352 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:37,522 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:37,710 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:37,896 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:38,082 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:38] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:21:38,655 INFO: 127.0.0.1 - - [24/Feb/2026 16:21:38] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 16:22:20,996 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:22:21,883 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 16:22:21,884 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 16:22:21,885 INFO:  * Restarting with stat
+2026-02-24 16:22:29,119 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:22:29,162 WARNING:  * Debugger is active!
+2026-02-24 16:22:29,170 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 16:53:20,689 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:53:21,787 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 16:53:21,787 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 16:53:21,804 INFO:  * Restarting with stat
+2026-02-24 16:53:26,510 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 16:53:26,552 WARNING:  * Debugger is active!
+2026-02-24 16:53:26,559 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 17:04:07,225 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 17:04:08,785 INFO:  * Restarting with stat
+2026-02-24 17:04:14,006 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:04:14,047 WARNING:  * Debugger is active!
+2026-02-24 17:04:14,051 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 17:04:19,696 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 17:04:21,221 INFO:  * Restarting with stat
+2026-02-24 17:04:27,265 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:04:27,308 WARNING:  * Debugger is active!
+2026-02-24 17:04:27,314 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 17:04:52,139 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:04:53,037 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 17:04:53,037 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 17:04:53,039 INFO:  * Restarting with stat
+2026-02-24 17:04:57,715 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:04:57,752 WARNING:  * Debugger is active!
+2026-02-24 17:04:57,756 INFO:  * Debugger PIN: 133-716-364
+2026-02-24 17:12:28,267 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:12:29,227 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 17:12:29,227 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 17:12:29,229 INFO:  * Restarting with stat
+2026-02-24 17:12:36,880 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:12:36,915 WARNING:  * Debugger is active!
+2026-02-24 17:12:36,921 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 17:18:27,867 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 17:18:29,016 INFO:  * Restarting with stat
+2026-02-24 17:21:05,576 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:21:06,461 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 17:21:06,461 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 17:21:06,463 INFO:  * Restarting with stat
+2026-02-24 17:21:13,872 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:21:13,928 WARNING:  * Debugger is active!
+2026-02-24 17:21:13,942 INFO:  * Debugger PIN: 868-517-436
+2026-02-24 17:23:33,335 INFO:  * Detected change in 'F:\\Final_Project2\\backend\\app.py', reloading
+2026-02-24 17:23:35,779 INFO:  * Restarting with stat
+2026-02-24 17:23:48,868 INFO: \u2705 YOLO model loaded from E:/yolo/Final_Project/backend/model/best.pt
+2026-02-24 17:23:49,765 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.44:5000
+2026-02-24 17:23:49,766 INFO: [33mPress CTRL+C to quit[0m
+2026-02-24 17:33:41,353 INFO: 127.0.0.1 - - [24/Feb/2026 17:33:41] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 17:33:44,026 INFO: 127.0.0.1 - - [24/Feb/2026 17:33:44] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-24 17:38:03,536 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:03] "OPTIONS /history HTTP/1.1" 200 -
+2026-02-24 17:38:03,539 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:03] "OPTIONS /history HTTP/1.1" 200 -
+2026-02-24 17:38:03,940 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:03] "GET /history HTTP/1.1" 200 -
+2026-02-24 17:38:03,975 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:03] "GET /history HTTP/1.1" 200 -
+2026-02-24 17:38:04,892 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:04] "GET /static/uploads/1_JPG.rf.7169b67485216d097c9b5b57bbe44e4d.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:04,894 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:04] "GET /static/uploads/17_PNG_jpg.rf.dd9ff853ebd567f07058d22c5212602e.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:04,974 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:04] "GET /static/uploads/h6_png_jpg.rf.11ecd4f6857372c33fb4eab04e325eda.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:04,978 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:04] "GET /static/uploads/eccfcd66bf63bb7ca1655c5ac5bcc66d-front-door-design-skin-cancer_jpg.rf.9d8bcb833b7885dbc9ec4e614a716bf0.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,002 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screenshot-2021-11-19-004140_png_jpg.rf.9544049d4001651e6d2b8b489e5c003d.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,013 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screen-Shot-2021-10-26-at-11-06-37-AM_png.rf.55e3cbb435d279fb7fa01e7be3adb130.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,419 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screenshot-2021-11-19-030651_png_jpg.rf.5d6183f68b467a017dd865d0ee6b937d.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,421 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screen-Shot-2021-11-16-at-6-57-51-PM_png.rf.c603e7ba5bbc01012ded617f3ba1cf2b.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,421 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/FzX1JYr4y78Em_jpeg_jpg.rf.115b2d3235a2c583cb09cc274a66705c.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,423 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screenshot-2021-11-19-025151_png_jpg.rf.ff0f3821cad9f719a9b328afeeadc3af.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,432 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/h115_png.rf.d0cca64031a99b25eb34b3146f1089e0.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,441 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/208_JPG.rf.db0b012d6a8714db3d2745b5d95d9d70.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,775 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/h115_png_jpg.rf.b8b68955d4fe63223a4955ac0b3808eb.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,776 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/clubbing-4_jpg.rf.752d98559a4755b853ab954836ac9472.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,776 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screen-Shot-2021-11-22-at-1-25-10-PM_png_jpg.rf.49cfd49bb0075e85c275ca864d7ebe13.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,776 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/beaus-lines-16_jpg.rf.671329de425167f8be7143a4a79a925d.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,785 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screen-Shot-2021-11-16-at-6-57-14-PM_png_jpg.rf.b973d3eab90080cffc7038fad376f675.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:05,793 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:05] "GET /static/uploads/Screen-Shot-2021-10-26-at-11-17-51-AM_png.rf.0ecb73eaeb0d39e1fd5dc5fc65d4127c.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,114 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-11-22-at-9-58-15-AM_png_jpg.rf.519eeb3395fff8c3640232701bd45f1c.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,114 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-10-26-at-11-18-49-AM_png_jpg.rf.89d05318a75f7d365df048d201e3c25e.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,119 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-11-22-at-8-08-01-AM_png_jpg.rf.d842ed86e0c53849eef79d8dfa65709a.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,136 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-11-22-at-9-23-31-AM_png_jpg.rf.f63cd266fbcd3f0f23d490bfdc347383.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,141 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-11-22-at-4-53-53-PM_png_jpg.rf.699ccd0c4052ae65f9398075062d320f.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,153 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-10-15-at-10-39-17-AM_png_jpg.rf.8b1377d2eeea82ee4547cc31ab1302e1.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,444 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/images.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,446 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/47_JPG.rf.859f79f1b23e6d5f8717b4b403174119.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,451 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/Screen-Shot-2021-11-15-at-12-19-41-PM_png.rf.c8921d0d3e2a6152dd0a27adddf6823b.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,470 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/h159_png.rf.2c602896a3622275f01280daa9a72b07.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,474 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/k143_png.rf.4725e220599ef720db23a434cdfefd29.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,481 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/h6_png.rf.738bb0117137ea520937ab9dd24b45cf.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,874 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/61_JPG.rf.2e198a02a4475926b64eb6fa65f5320b.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,875 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/31_JPG.rf.24e70cf5daf5d73f4be158e16d8809b4.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,876 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/83_JPG.rf.ec6ec5dfc93e7c18b6d2e342995953f6.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,877 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/107_JPG.rf.1c814c07a2fccda4c12835b570fd8118.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,885 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/finger-clubbing_jpg.rf.b5e8b1f66553e57daeae7656ad76bbc9.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:06,889 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:06] "GET /static/uploads/256_jpg.rf.6b86e81652dc98a34088dd7d26b74386.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,220 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/97_JPG.rf.57164ea44c3a6f70bd1ff8ebea8a488f.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,220 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/h127_png.rf.167d62fed2c891a588a9ed71d732bea4.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,223 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/eccfcd66bf63bb7ca1655c5ac5bcc66d--front-door-design-skin-cancer_jpg.rf.0d2093a5571faf96a53b4e4e5e9b1095.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,223 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/nails-chemotherapy-3_jpg.rf.1d111d115ddc49ba32f8dfae8488fb01.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,239 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/h4_png_jpg.rf.d02cbd803e04ef410049532776343e45.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,248 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/images-JRLiQC_jpeg_jpg.rf.e14b45d808c09ab9df9726c9268fd1d7.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,548 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/FzX1JYr4y78Em_jpeg_jpg.rf.fbae822e2420836e643aa8e128400954.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,550 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/9_PNG.rf.995215ae573af0b85d3ab1006148c60f.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,557 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/hutchinsons-sign_jpg.rf.7e9b1caf85c636070e92dcbf514c2765.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,563 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/k115_png.rf.dc8954c7077e57e28de2d5d4aa65fe6d.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,570 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screenshot-2021-11-19-021151_png.rf.84ff93ab0e671c89aa61306a0ed5d7b4.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,571 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "GET /static/uploads/9_PNG_jpg.rf.13c1a3e92bbb4dd60816c532f59a64c3.jpg HTTP/1.1" 200 -
+2026-02-24 17:38:07,870 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-9-23-31-AM_png.rf.f940369110b964370547887e0424cad2.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,872 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screen-Shot-2021-11-19-at-1-51-06-AM_png.rf.fa630f8c4e36736353d94258fefdaf10.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,879 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-1-25-10-PM_png.rf.d05155ee241aaffbdce19e624c030707.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,883 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screenshot-2021-11-19-010306_png.rf.497d594ac9326005539d98f5e1390fac.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,888 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/Screenshot-2021-11-19-010617_png.rf.865a09bcd44adb21537c96a6d3e6457e.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:07,893 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:07] "[33mGET /static/uploads/k87_png.rf.23457dc0eb2ab429f1f11137ffe53472.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,183 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/FzX1JYr4y78Em_jpeg.rf.58bba047ae1978e8ab0dee61e7aa99ab.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,186 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/141_JPG.rf.6612cc00e38b44e37e1f8cc4aa3be368.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,190 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-11-17-at-2-28-39-PM_png.rf.b047bb6264cfa3dde7dd53e9dca1b75d.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,195 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-11-16-at-10-43-37-PM_png.rf.bc3fc691ea5e5fe9be0cc3793e734510.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,214 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/k84_png.rf.230e65a1726766ed8083c23b3fb3e9af.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,217 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/h240_png.rf.92b6fec522d1a6a5874d76bb5c7069b7.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,501 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/40_JPG.rf.ba9cc4edae755fe4947b5f160f72a96e.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,505 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screenshot-2021-11-22-014312_png_jpg.rf.a591a9510686de6670cc5d0282dbe8a7.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,510 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screenshot-2021-11-19-011229_png_jpg.rf.0403b028502cb11d2fbbe71573876917.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,513 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screenshot-2021-11-19-020122_png_jpg.rf.bd034f0edc3313b6dd3398595fbc2864.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,529 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screenshot-2021-11-21-163956_png_jpg.rf.a461809f47c9ff647d40a5098a6845e2.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,531 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-11-16-at-6-58-36-PM_png_jpg.rf.b4a6414c610678cc8da29236b4667b8b.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,813 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screenshot-2021-11-19-023057_png.rf.153dd43925d4c76cdac621f8c27ea25c.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,817 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-10-15-at-10-36-19-AM_png.rf.0b57245774299419df103ea2ec70d534.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,822 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/h233_png.rf.dda0fc4710d357bf5d36334f5d893058.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,826 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/k92_png.rf.c0a9b82dc76a6c56a1d4bf7f09706ecb.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,849 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-21-26-PM_png.rf.b523d362ea68389dc437fba73ba5a37d.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:08,852 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:08] "[33mGET /static/uploads/Screen-Shot-2021-10-15-at-12-02-21-PM_png.rf.2ab5f5834855fadab38cfc503828b497.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,127 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-40-52-PM_png.rf.03b3e5c3e7ecda4ba3b9f91b7972bca9.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,129 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-19-at-1-32-36-AM_png.rf.ce6a47146f88df9f9c20b5a53394a0e3.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,135 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/k37_png.rf.be962d9261bf44c2c6195d3c29755c5f.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,139 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/303_JPG.rf.c441dca7d0ffc326377b8fd02ff4ccbd.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,173 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/h237_png.rf.134c38f2db2c8c1fd802459df16b06c6.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,175 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-19-42-PM_png.rf.6258b31a19291c7beb4551971db85891.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,446 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screenshot-2021-11-19-025151_png.rf.11517308c409a715bc7574825080b2be.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,447 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/77_JPG.rf.0e6c04af35ab628ebf814997834c1c20.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,451 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-12-40-47-PM_png.rf.e02e3a1d7a0b953461e5afb3baa86eef.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,455 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/k127_png.rf.f529a7b09c94a9d480aeccb3ef5cbb5d.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,489 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-15-at-11-56-32-AM_png.rf.71c8da9177ac9571ae52746c06e433ae.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,493 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screenshot-2021-11-19-005248_png.rf.9da172d1108dd683a5306aee6c3d0492.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,774 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/Screen-Shot-2021-11-22-at-5-25-53-PM_png.rf.36180c47299d592e98de39e462487696.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,775 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/r0_34_640_394_w1200_h678_fmax-copy_jpg.rf.2f6886e9a13f6a1229d98d6caf5e20bf.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,777 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/k126_png.rf.0a4bf61a2288b7c1c875db00cf282ade.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,783 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/179_JPG.rf.6690c70939101eb42ff1a2b94a7cd218.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,802 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/12_JPG.rf.21b44580834b4fd33c912820c46ac8bd.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:09,806 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:09] "[33mGET /static/uploads/205_JPG.rf.323e0b40911de026ad62bdb6abc87045.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,083 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/5_JPG.rf.ebcb409f2d133b812795012f3e73cc57.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,087 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/Screenshot-2021-11-19-004211_png_jpg.rf.87bcb49dd91947b1fb31d4e5df17d713.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,091 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/h136_png_jpg.rf.032d122ef37347fa3e0472a3bbd22de0.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,097 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/beau_jpg.rf.ff56bee11b354946b2d87105df62bcb8.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,114 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/260_JPG.rf.0a4fdc3ca67063b05eae91cc73817f50.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,117 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/2_JPG.rf.a35c884e3dc728c250aeb20d2aad1b5b.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,393 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/8_JPG.rf.7dd616ed71714e586bdeb65fe643fcf0.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:38:10,396 INFO: 127.0.0.1 - - [24/Feb/2026 17:38:10] "[33mGET /static/uploads/15_JPG.rf.bc473abbfc223240d11a99694decf54b.jpg HTTP/1.1[0m" 404 -
+2026-02-24 17:39:02,574 INFO: 127.0.0.1 - - [24/Feb/2026 17:39:02] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:39:03,050 INFO: 127.0.0.1 - - [24/Feb/2026 17:39:03] "GET /static/results/b99264c88eb6b2b6.jpg HTTP/1.1" 200 -
+2026-02-24 17:39:38,257 INFO: 127.0.0.1 - - [24/Feb/2026 17:39:38] "GET /static/uploads/h114_png.rf.bcd29112e63a1b11f6c631630ba1e1b3.jpg HTTP/1.1" 200 -
+2026-02-24 17:40:08,685 INFO: 127.0.0.1 - - [24/Feb/2026 17:40:08] "[36mGET /static/uploads/h114_png.rf.bcd29112e63a1b11f6c631630ba1e1b3.jpg HTTP/1.1[0m" 304 -
+2026-02-24 17:40:41,142 INFO: 127.0.0.1 - - [24/Feb/2026 17:40:41] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:40:41,187 INFO: 127.0.0.1 - - [24/Feb/2026 17:40:41] "GET /static/results/06a81bf30c4d0f08.jpg HTTP/1.1" 200 -
+2026-02-24 17:41:54,531 INFO: 127.0.0.1 - - [24/Feb/2026 17:41:54] "GET /static/uploads/Screen-Shot-2021-11-16-at-6-57-14-PM_png.rf.1d4acc2ab9e0c3a0e13404111faa5026.jpg HTTP/1.1" 200 -
+2026-02-24 17:43:54,021 INFO: 127.0.0.1 - - [24/Feb/2026 17:43:54] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:43:54,391 INFO: 127.0.0.1 - - [24/Feb/2026 17:43:54] "GET /static/results/7ce49df46bb2f539.jpg HTTP/1.1" 200 -
+2026-02-24 17:44:21,434 INFO: 127.0.0.1 - - [24/Feb/2026 17:44:21] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:44:21,472 INFO: 127.0.0.1 - - [24/Feb/2026 17:44:21] "GET /static/results/902a60f686950076.jpg HTTP/1.1" 200 -
+2026-02-24 17:45:42,528 INFO: 127.0.0.1 - - [24/Feb/2026 17:45:42] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:45:42,901 INFO: 127.0.0.1 - - [24/Feb/2026 17:45:42] "GET /static/results/6f4a55d5a972bd50.jpg HTTP/1.1" 200 -
+2026-02-24 17:46:23,186 INFO: 127.0.0.1 - - [24/Feb/2026 17:46:23] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:46:23,224 INFO: 127.0.0.1 - - [24/Feb/2026 17:46:23] "GET /static/results/bbfbc1eb0ee48d36.jpg HTTP/1.1" 200 -
+2026-02-24 17:46:47,860 INFO: 127.0.0.1 - - [24/Feb/2026 17:46:47] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:46:48,231 INFO: 127.0.0.1 - - [24/Feb/2026 17:46:48] "GET /static/results/74f9d77507f92bb8.jpg HTTP/1.1" 200 -
+2026-02-24 17:47:24,276 INFO: 127.0.0.1 - - [24/Feb/2026 17:47:24] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:47:24,314 INFO: 127.0.0.1 - - [24/Feb/2026 17:47:24] "GET /static/results/b1df2bcd3d542926.jpg HTTP/1.1" 200 -
+2026-02-24 17:48:25,013 INFO: 127.0.0.1 - - [24/Feb/2026 17:48:25] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:48:25,382 INFO: 127.0.0.1 - - [24/Feb/2026 17:48:25] "GET /static/results/70b7f17735d26fc9.jpg HTTP/1.1" 200 -
+2026-02-24 17:50:18,731 INFO: 127.0.0.1 - - [24/Feb/2026 17:50:18] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:50:19,148 INFO: 127.0.0.1 - - [24/Feb/2026 17:50:19] "GET /static/results/7ffc756d59ab12d0.jpg HTTP/1.1" 200 -
+2026-02-24 17:51:25,898 INFO: 127.0.0.1 - - [24/Feb/2026 17:51:25] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:51:26,281 INFO: 127.0.0.1 - - [24/Feb/2026 17:51:26] "GET /static/results/07bf8046f1b4a33c.jpg HTTP/1.1" 200 -
+2026-02-24 17:51:55,384 INFO: 127.0.0.1 - - [24/Feb/2026 17:51:55] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:51:55,418 INFO: 127.0.0.1 - - [24/Feb/2026 17:51:55] "GET /static/results/e35bd75af1389967.jpg HTTP/1.1" 200 -
+2026-02-24 17:52:20,576 INFO: 127.0.0.1 - - [24/Feb/2026 17:52:20] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:52:20,982 INFO: 127.0.0.1 - - [24/Feb/2026 17:52:20] "GET /static/results/8a671b12b474d1d9.jpg HTTP/1.1" 200 -
+2026-02-24 17:52:52,802 INFO: 127.0.0.1 - - [24/Feb/2026 17:52:52] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:52:52,835 INFO: 127.0.0.1 - - [24/Feb/2026 17:52:52] "GET /static/results/c5fcad0beeadb6ef.jpg HTTP/1.1" 200 -
+2026-02-24 17:54:00,007 INFO: 127.0.0.1 - - [24/Feb/2026 17:54:00] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:54:00,371 INFO: 127.0.0.1 - - [24/Feb/2026 17:54:00] "GET /static/results/e4329361700e7edd.jpg HTTP/1.1" 200 -
+2026-02-24 17:54:32,215 INFO: 127.0.0.1 - - [24/Feb/2026 17:54:32] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:54:32,253 INFO: 127.0.0.1 - - [24/Feb/2026 17:54:32] "GET /static/results/5d5c302aa259929a.jpg HTTP/1.1" 200 -
+2026-02-24 17:55:01,102 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:01] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:55:01,505 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:01] "GET /static/results/45ccadb7347f1683.jpg HTTP/1.1" 200 -
+2026-02-24 17:55:20,098 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:20] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:55:20,137 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:20] "GET /static/results/c142b3a46d78eb5e.jpg HTTP/1.1" 200 -
+2026-02-24 17:55:38,099 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:38] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:55:38,491 INFO: 127.0.0.1 - - [24/Feb/2026 17:55:38] "GET /static/results/3ac04d93166a8090.jpg HTTP/1.1" 200 -
+2026-02-24 17:56:23,237 INFO: 127.0.0.1 - - [24/Feb/2026 17:56:23] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:56:23,272 INFO: 127.0.0.1 - - [24/Feb/2026 17:56:23] "GET /static/results/56119107bbd38201.jpg HTTP/1.1" 200 -
+2026-02-24 17:57:46,839 INFO: 127.0.0.1 - - [24/Feb/2026 17:57:46] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:57:47,217 INFO: 127.0.0.1 - - [24/Feb/2026 17:57:47] "GET /static/results/2231b28a31a5d207.jpg HTTP/1.1" 200 -
+2026-02-24 17:58:08,318 INFO: 127.0.0.1 - - [24/Feb/2026 17:58:08] "POST /predict HTTP/1.1" 200 -
+2026-02-24 17:58:08,352 INFO: 127.0.0.1 - - [24/Feb/2026 17:58:08] "GET /static/results/0339766a61b8acc9.jpg HTTP/1.1" 200 -
+2026-02-24 18:02:05,209 INFO: 127.0.0.1 - - [24/Feb/2026 18:02:05] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:02:05,601 INFO: 127.0.0.1 - - [24/Feb/2026 18:02:05] "GET /static/results/09562b4e2a913b69.jpg HTTP/1.1" 200 -
+2026-02-24 18:02:54,586 INFO: 127.0.0.1 - - [24/Feb/2026 18:02:54] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:02:54,623 INFO: 127.0.0.1 - - [24/Feb/2026 18:02:54] "GET /static/results/be4dcb316d7ee627.jpg HTTP/1.1" 200 -
+2026-02-24 18:03:43,369 INFO: 127.0.0.1 - - [24/Feb/2026 18:03:43] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:03:43,872 INFO: 127.0.0.1 - - [24/Feb/2026 18:03:43] "GET /static/results/1b79afc66ad00fe3.jpg HTTP/1.1" 200 -
+2026-02-24 18:04:07,541 INFO: 127.0.0.1 - - [24/Feb/2026 18:04:07] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:04:07,579 INFO: 127.0.0.1 - - [24/Feb/2026 18:04:07] "GET /static/results/217448a48708dbaf.jpg HTTP/1.1" 200 -
+2026-02-24 18:06:24,357 INFO: 127.0.0.1 - - [24/Feb/2026 18:06:24] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:06:24,735 INFO: 127.0.0.1 - - [24/Feb/2026 18:06:24] "GET /static/results/4fe21b5f965d472c.jpg HTTP/1.1" 200 -
+2026-02-24 18:07:37,587 INFO: 127.0.0.1 - - [24/Feb/2026 18:07:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:35:39,121 INFO: 127.0.0.1 - - [24/Feb/2026 18:35:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:36:05,222 INFO: 127.0.0.1 - - [24/Feb/2026 18:36:05] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:36:05,612 INFO: 127.0.0.1 - - [24/Feb/2026 18:36:05] "GET /static/results/eb0c35966b7107f9.jpg HTTP/1.1" 200 -
+2026-02-24 18:37:00,757 INFO: 127.0.0.1 - - [24/Feb/2026 18:37:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:37:43,727 INFO: 127.0.0.1 - - [24/Feb/2026 18:37:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:38:16,007 INFO: 127.0.0.1 - - [24/Feb/2026 18:38:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:38:23,760 INFO: 127.0.0.1 - - [24/Feb/2026 18:38:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2026-02-24 18:38:33,088 INFO: 127.0.0.1 - - [24/Feb/2026 18:38:33] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:38:33,487 INFO: 127.0.0.1 - - [24/Feb/2026 18:38:33] "GET /static/results/76215cc10d884cb8.jpg HTTP/1.1" 200 -
+2026-02-24 18:40:25,971 INFO: 127.0.0.1 - - [24/Feb/2026 18:40:25] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:40:26,445 INFO: 127.0.0.1 - - [24/Feb/2026 18:40:26] "GET /static/results/f539e19a86f7e621.jpg HTTP/1.1" 200 -
+2026-02-24 18:41:25,182 INFO: 127.0.0.1 - - [24/Feb/2026 18:41:25] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:41:25,228 INFO: 127.0.0.1 - - [24/Feb/2026 18:41:25] "GET /static/results/aa98c524739b6d23.jpg HTTP/1.1" 200 -
+2026-02-24 18:41:50,313 INFO: 127.0.0.1 - - [24/Feb/2026 18:41:50] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:41:50,688 INFO: 127.0.0.1 - - [24/Feb/2026 18:41:50] "GET /static/results/ecd1a096f091806b.jpg HTTP/1.1" 200 -
+2026-02-24 18:46:30,690 INFO: 127.0.0.1 - - [24/Feb/2026 18:46:30] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:46:31,116 INFO: 127.0.0.1 - - [24/Feb/2026 18:46:31] "GET /static/results/274fa66516cd87cd.jpg HTTP/1.1" 200 -
+2026-02-24 18:46:56,796 INFO: 127.0.0.1 - - [24/Feb/2026 18:46:56] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:46:56,834 INFO: 127.0.0.1 - - [24/Feb/2026 18:46:56] "GET /static/results/9dec3622bb5ce279.jpg HTTP/1.1" 200 -
+2026-02-24 18:47:27,793 INFO: 127.0.0.1 - - [24/Feb/2026 18:47:27] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:47:28,188 INFO: 127.0.0.1 - - [24/Feb/2026 18:47:28] "GET /static/results/d1b1149ef897be99.jpg HTTP/1.1" 200 -
+2026-02-24 18:50:20,278 INFO: 127.0.0.1 - - [24/Feb/2026 18:50:20] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:50:20,656 INFO: 127.0.0.1 - - [24/Feb/2026 18:50:20] "GET /static/results/859efcb54973f386.jpg HTTP/1.1" 200 -
+2026-02-24 18:50:38,913 INFO: 127.0.0.1 - - [24/Feb/2026 18:50:38] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:50:38,952 INFO: 127.0.0.1 - - [24/Feb/2026 18:50:38] "GET /static/results/6b0a58aa08bb9dcf.jpg HTTP/1.1" 200 -
+2026-02-24 18:51:02,833 INFO: 127.0.0.1 - - [24/Feb/2026 18:51:02] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:51:03,319 INFO: 127.0.0.1 - - [24/Feb/2026 18:51:03] "GET /static/results/ab6714ab6ad8c208.jpg HTTP/1.1" 200 -
+2026-02-24 18:51:21,636 INFO: 127.0.0.1 - - [24/Feb/2026 18:51:21] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:51:21,673 INFO: 127.0.0.1 - - [24/Feb/2026 18:51:21] "GET /static/results/00e097603b33577c.jpg HTTP/1.1" 200 -
+2026-02-24 18:57:42,150 INFO: 127.0.0.1 - - [24/Feb/2026 18:57:42] "POST /predict HTTP/1.1" 200 -
+2026-02-24 18:57:42,519 INFO: 127.0.0.1 - - [24/Feb/2026 18:57:42] "GET /static/results/5fa9a1753250ee29.jpg HTTP/1.1" 200 -
+2026-02-24 19:33:43,591 INFO: 127.0.0.1 - - [24/Feb/2026 19:33:43] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:33:44,044 INFO: 127.0.0.1 - - [24/Feb/2026 19:33:44] "GET /static/results/1f368accc724f7da.jpg HTTP/1.1" 200 -
+2026-02-24 19:34:06,239 INFO: 127.0.0.1 - - [24/Feb/2026 19:34:06] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:34:06,281 INFO: 127.0.0.1 - - [24/Feb/2026 19:34:06] "GET /static/results/b8bb917a39a3d3f2.jpg HTTP/1.1" 200 -
+2026-02-24 19:34:53,061 INFO: 127.0.0.1 - - [24/Feb/2026 19:34:53] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:34:53,786 INFO: 127.0.0.1 - - [24/Feb/2026 19:34:53] "GET /static/results/72536511fc32ecfa.jpg HTTP/1.1" 200 -
+2026-02-24 19:36:15,933 INFO: 127.0.0.1 - - [24/Feb/2026 19:36:15] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:36:16,568 INFO: 127.0.0.1 - - [24/Feb/2026 19:36:16] "GET /static/results/daaad1ce68f647c6.jpg HTTP/1.1" 200 -
+2026-02-24 19:47:46,343 INFO: 127.0.0.1 - - [24/Feb/2026 19:47:46] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:47:46,916 INFO: 127.0.0.1 - - [24/Feb/2026 19:47:46] "GET /static/results/402dd1eed13c4da0.jpg HTTP/1.1" 200 -
+2026-02-24 19:48:03,532 INFO: 127.0.0.1 - - [24/Feb/2026 19:48:03] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:48:03,575 INFO: 127.0.0.1 - - [24/Feb/2026 19:48:03] "GET /static/results/cea4acc7e85ecba4.jpg HTTP/1.1" 200 -
+2026-02-24 19:48:18,698 INFO: 127.0.0.1 - - [24/Feb/2026 19:48:18] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:48:19,099 INFO: 127.0.0.1 - - [24/Feb/2026 19:48:19] "GET /static/results/c4ab4e69d2b53109.jpg HTTP/1.1" 200 -
+2026-02-24 19:50:54,319 INFO: 127.0.0.1 - - [24/Feb/2026 19:50:54] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:50:54,700 INFO: 127.0.0.1 - - [24/Feb/2026 19:50:54] "GET /static/results/a5d18e5bf9e6518d.jpg HTTP/1.1" 200 -
+2026-02-24 19:51:12,765 INFO: 127.0.0.1 - - [24/Feb/2026 19:51:12] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:51:12,804 INFO: 127.0.0.1 - - [24/Feb/2026 19:51:12] "GET /static/results/7564e9252623d46c.jpg HTTP/1.1" 200 -
+2026-02-24 19:51:37,265 INFO: 127.0.0.1 - - [24/Feb/2026 19:51:37] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:51:37,620 INFO: 127.0.0.1 - - [24/Feb/2026 19:51:37] "GET /static/results/140ea7c61ab6b448.jpg HTTP/1.1" 200 -
+2026-02-24 19:52:19,587 INFO: 127.0.0.1 - - [24/Feb/2026 19:52:19] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:52:19,960 INFO: 127.0.0.1 - - [24/Feb/2026 19:52:19] "GET /static/results/8599c9895013bc5a.jpg HTTP/1.1" 200 -
+2026-02-24 19:52:43,112 INFO: 127.0.0.1 - - [24/Feb/2026 19:52:43] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:52:43,152 INFO: 127.0.0.1 - - [24/Feb/2026 19:52:43] "GET /static/results/d0cdfd310eed8625.jpg HTTP/1.1" 200 -
+2026-02-24 19:58:13,456 INFO: 127.0.0.1 - - [24/Feb/2026 19:58:13] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:58:13,917 INFO: 127.0.0.1 - - [24/Feb/2026 19:58:13] "GET /static/results/a3eda16dd0aac475.jpg HTTP/1.1" 200 -
+2026-02-24 19:59:08,472 INFO: 127.0.0.1 - - [24/Feb/2026 19:59:08] "POST /predict HTTP/1.1" 200 -
+2026-02-24 19:59:08,535 INFO: 127.0.0.1 - - [24/Feb/2026 19:59:08] "GET /static/results/b4ca15d2ab667e48.jpg HTTP/1.1" 200 -

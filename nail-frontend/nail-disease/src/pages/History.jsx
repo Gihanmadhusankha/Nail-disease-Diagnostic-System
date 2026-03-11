@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { API_ENDPOINTS } from '../config/api';
+import { fetchHistory } from '../services/apiService';
 
 function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    const fetchHistory = async () => {
+    const loadHistory = async () => {
       try {
-        const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/history', {
-          headers: {
-            Authorization: token,
-          },
-        });
-        setHistory(response.data);
+        const data = await fetchHistory();
+        setHistory(data);
       } catch (error) {
         console.error('Error fetching history:', error);
       }
     };
 
-    fetchHistory();
+    loadHistory();
   }, []);
 
   return (
@@ -38,7 +34,7 @@ function History() {
             <tr key={i}>
               <td className="border p-2 text-center">
                 <img
-                  src={`http://localhost:5000/static/uploads/${entry.filename}`}
+                  src={`${API_ENDPOINTS.STATIC_UPLOADS}/${entry.filename}`}
                   alt={entry.filename}
                   className="h-24 mx-auto rounded"
                 />
