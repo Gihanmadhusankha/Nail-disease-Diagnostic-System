@@ -1,4 +1,4 @@
-# 🩺 AI-Powered Nail Disease Diagnostic System
+# 🩺 AI-Powered Nail Disease Diagnostic System using YOLOv11 model
 
 ## Overview
 An intelligent healthcare platform that combines **YOLOv11 Computer Vision** and **Gemini API** to detect nail diseases from images and provide context-aware treatment guidance.
